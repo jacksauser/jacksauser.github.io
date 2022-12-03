@@ -1,0 +1,47 @@
+h1 {
+    display: flex;
+    flex-direction: row;
+    font-size: 64px;
+}
+
+h1:before,
+h1:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid #000;
+    margin: auto;
+    margin-inline: 20px;
+}
+
+
+.top_hello {
+    display: flex;
+}
+
+.about_contact {
+    display: flex;
+    justify-content: center;
+}
+
+.about_contact button{
+    margin: 1em;
+    height: 3em;
+    width: 8em;
+    border-radius: 12px;
+    border-width: 1px;
+    font-size: larger;
+    background-color: #a96ccf96
+}
+
+.about_contact button:hover{
+    background-color: #9f73bad0
+}
+
+.proj_header{
+    text-decoration: underline;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}

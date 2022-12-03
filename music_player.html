@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html land="en" dir="ltr">
+   <head>
+      <title>Music Player Proj</title>
+      <link rel="stylesheet" href="styles/styles.css">
+      <link rel="stylesheet" href="styles/nav_styles.css">
+      <link rel="stylesheet" href="styles/music_player_styles.css">
+      <script src="https://kit.fontawesome.com/ffa9aacf67.js" crossorigin="anonymous"></script>
+      <meta charset="utf-8">
+   </head>
+   <body>
+    <nav role=navigation class="top-nav">
+        <ul>
+           <li nav aria-current=page tabindex=0><a href="index.html">Home</a></li>
+           <li>|</li>
+           <li tabindex=1><a href="about.html">About</a></li>
+           <li>|</li>
+           <li tabindex=2><a aria-haspopup="true" aria-expanded="false">Projects</a>
+               <ul class="pulldown-menu">
+                   <li>AI Games</li>
+                   <li><a href="music_player.html">Music Player</a></li>
+                </ul>
+           </li>
+           <li>|</li>
+           <li tabindex=3><a href="https://drive.google.com/file/d/1jSj-Xr7VIQlYw_9B--JPNQsc_a9lC8vU/view?usp=sharing">Resume</a></li>
+           <li>|</li>
+           <li tabindex=4><a aria-haspopup="true" aria-expanded="false">Random</a>
+              <ul class="pulldown-menu">
+                 <li><a href="contact.html">Contact</a></li>
+              </ul>
+           </li>
+        </ul>
+        <ul class="right-side-nav">
+           <li>Jack Sauser</li>
+           <li></li>
+           <li><a href="https://github.com/jacksauser"><i class="fa-brands fa-github"></i></a></li>
+           <li></li>
+           <li><a href="https://www.linkedin.com/in/jack-sauser/"><i class="fa-brands fa-linkedin"></i></a></li>
+           <li></li>
+           <li><a href="mailto: jackgsauser@gmail.com"><i class="fa-regular fa-envelope"></i></a></li>
+        </ul>
+     </nav>
+      
+
+      <main>
+        <div class="title">
+            <h1>Music Player</h1>
+        </div>
+        <div class="description">
+            <div>
+                <div class="desc_text">
+                      <p>This is the frontend for a mobile Music Player applicaion. Written in HTML, CSS, and JavaScript.</p>
+                    <p>There are three main pages: Albums, Tracks, and Player.</p>
+                    <p>The 'Albums' and 'Tracks' pages are written in HTML/CSS. Links are used to navigate between the pages and select specific albums/tracks to play.</p>
+                    <p>On the 'Player' page HTML/CSS is used for design and layout, and JavaScript is used to control the state of the player. This includes playing/pausing/skipping, volumn up/down, and displaying current song duration.</p>
+                </div>
+                
+                <img src="assets/music-player-diagram.png" alt="Workflow diagram for Music Player Project"/>
+            </div>
+            <img src="assets/music-player-gif.gif" alt="gif of a demo of the music player">
+        </div>
+        
+        
+
+      </main>
+   </body>
+</html>

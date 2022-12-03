@@ -1,0 +1,7 @@
+.description{
+    display: flex;
+}
+
+.desc_text {
+    width: 65%;
+}

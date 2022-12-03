@@ -1,0 +1,12 @@
+.top-warpper{
+    display: flex;
+}
+
+.pic_container img{
+    width: 70%;
+    margin-left: 6em;
+}
+
+/* .chart-containe {
+    width: 70%;
+} */

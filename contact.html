@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html land="en" dir="ltr">
+   <head>
+      <title>Contact</title>
+      <link rel="stylesheet" href="styles/styles.css">
+      <link rel="stylesheet" href="styles/nav_styles.css">
+      <script src="https://kit.fontawesome.com/ffa9aacf67.js" crossorigin="anonymous"></script>
+      
+      <link rel="stylesheet" href="styles/contact_styles.css">
+      <meta charset="utf-8">
+   </head>
+   <body>
+    <nav role=navigation class="top-nav">
+        <ul>
+           <li nav aria-current=page tabindex=0><a href="index.html">Home</a></li>
+           <li>|</li>
+           <li tabindex=1><a href="about.html">About</a></li>
+           <li>|</li>
+           <li tabindex=2><a aria-haspopup="true" aria-expanded="false">Projects</a>
+               <ul class="pulldown-menu">
+                   <li>AI Games</li>
+                   <li><a href="music_player.html">Music Player</a></li>
+                </ul>
+           </li>
+           <li>|</li>
+           <li tabindex=3><a href="https://drive.google.com/file/d/1jSj-Xr7VIQlYw_9B--JPNQsc_a9lC8vU/view?usp=sharing">Resume</a></li>
+           <li>|</li>
+           <li tabindex=4><a aria-haspopup="true" aria-expanded="false">Random</a>
+              <ul class="pulldown-menu">
+                 <li><a href="contact.html">Contact</a></li>
+              </ul>
+           </li>
+        </ul>
+        <ul class="right-side-nav">
+           <li>Jack Sauser</li>
+           <li></li>
+           <li><a href="https://github.com/jacksauser"><i class="fa-brands fa-github"></i></a></li>
+           <li></li>
+           <li><a href="https://www.linkedin.com/in/jack-sauser/"><i class="fa-brands fa-linkedin"></i></a></li>
+           <li></li>
+           <li><a href="mailto: jackgsauser@gmail.com"><i class="fa-regular fa-envelope"></i></a></li>
+        </ul>
+     </nav>
+
+
+      <main class="main-content">
+        <center><h1 class="page-header">Get in Touch</h1></center>
+        <!-- Adding a section for the contact form -->
+        <section id="contact">
+            <div class="contact-container">
+                <div class="contact-subheader">
+                    <h2>I'm pretty interesting, fun, and a damn good devloper.</h2>
+                    <h3>Reach out and we'll get connected. In the meantime, check out my linkedin or github</h3>
+                    
+                    <div class="socials_list">
+                        <a href="https://github.com/jacksauser"><i class="fa-brands fa-github fa-3x"></i></a>
+                        <a href="https://www.linkedin.com/in/jack-sauser/"><i class="fa-brands fa-linkedin fa-3x"></i></a>
+                    </div>
+                </div>
+
+                <!-- The actual contact form -->
+                <form action="https://api.web3forms.com/submit" method="POST" id="form" role="form" arialabel="A form to contact Lila">
+                    <div class="contact_inputs">
+                        <input type="hidden" name="access_key" value="64474af6-9035-4f0c-845a-c5872bce6ead" />
+                        <input type="hidden" name="subject" value="New Contact Form Submission" />
+                        
+                        <!-- Preventing bots from filling out the form -->
+                        <input type="checkbox" name="botcheck" class="botcheck" role="checkbox" />
+
+                        <!-- Adding a section to input one's name -->
+                        <label class="hidden" for="name">Input Your Name</label>
+                        <input type="text" name="name" id="name" placeholder="Name" required class="contact__input" role="textbox" />
+
+                        <!-- Adding a section for the contact message in the form -->
+                        <label class="hidden" for="message">Input Your Message</label>
+                        <textarea rows="5" name="message" id="message" placeholder="Your Message" class="contact__input" required role="textbox"></textarea>
+                    
+                        <!-- Adding a checkbox element to the form -->
+                        <div class="checkbox">
+                            <h4 class="checkbox-label">How do you wanted to be contacted?</h4>
+                            <input type="checkbox" id="option1" name="Email" value="Email" role="checkbox">
+                            <label for="option1">Email</label><br>
+                            <input type="checkbox" id="option2" name="Phone" value="Phone" role="checkbox">
+                            <label for="option2">Phone</label><br>
+                            <input type="checkbox" id="option3" name="DM" value="DM" role="checkbox">
+                            <label for="option3">DM</label><br>
+                            <input type="checkbox" id="option4" name="Carrier Pigeon" value="Carrier Pigeon" role="checkbox">
+                            <label for="option4">Carrier Pigeon</label><br>
+                            <input type="checkbox" id="option5" name="USPS" value="USPS" role="checkbox">
+                            <label for="option5">USPS</label><br>
+                            <input type="checkbox" id="option6" name="Other" value="Other" role="checkbox">
+                            <label for="option6">Other</label><br>
+                        </div>
+                    
+                        <!-- Adding a section to input an email -->
+                        <label class="hidden" for="email">Input Your Email</label>
+                        <input type="email" name="email" id="email" placeholder="Email" required class="contact__input" role="textbox"/>
+
+                        
+                        <!-- Adding a section to input a phone number -->
+                        <label class="hidden" for="phone">Input Your Phone</label>
+                        <input type="tel" name="phone" id="phone" placeholder="Phone Number (###-###-####)" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="contact__input" />
+
+
+                        <!-- Adding a block to display whether the form submittal went through -->
+                        <h4 id="result"></h4>
+
+                        <!-- Adding a submit button -->
+                        <button type="submit" class="contact__button" role="button">Submit</button>
+                    
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+   </body>
+   <script src = "assets/js/contact.js"></script>
+    <script src= "https://smtpjs.com/v3/smtp.js"></script>
+
+</html>

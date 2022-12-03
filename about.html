@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html land="en" dir="ltr">
+   <head>
+      <title>About</title>
+      <link rel="stylesheet" href="styles/styles.css">
+      <link rel="stylesheet" href="styles/nav_styles.css">
+
+      <link rel="stylesheet" href="styles/about_styles.css">
+      <script src="https://kit.fontawesome.com/ffa9aacf67.js" crossorigin="anonymous"></script>
+
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <meta charset="utf-8">
+   </head>
+   <body>
+    <nav role=navigation class="top-nav">
+        <ul>
+           <li nav aria-current=page tabindex=0><a href="index.html">Home</a></li>
+           <li>|</li>
+           <li tabindex=1><a href="about.html">About</a></li>
+           <li>|</li>
+           <li tabindex=2><a aria-haspopup="true" aria-expanded="false">Projects</a>
+               <ul class="pulldown-menu">
+                   <li>AI Games</li>
+                   <li><a href="music_player.html">Music Player</a></li>
+                </ul>
+           </li>
+           <li>|</li>
+           <li tabindex=3><a href="https://drive.google.com/file/d/1jSj-Xr7VIQlYw_9B--JPNQsc_a9lC8vU/view?usp=sharing">Resume</a></li>
+           <li>|</li>
+           <li tabindex=4><a aria-haspopup="true" aria-expanded="false">Random</a>
+              <ul class="pulldown-menu">
+                 <li><a href="contact.html">Contact</a></li>
+              </ul>
+           </li>
+        </ul>
+        <ul class="right-side-nav">
+           <li>Jack Sauser</li>
+           <li></li>
+           <li><a href="https://github.com/jacksauser"><i class="fa-brands fa-github"></i></a></li>
+           <li></li>
+           <li><a href="https://www.linkedin.com/in/jack-sauser/"><i class="fa-brands fa-linkedin"></i></a></li>
+           <li></li>
+           <li><a href="mailto: jackgsauser@gmail.com"><i class="fa-regular fa-envelope"></i></a></li>
+        </ul>
+     </nav>
+
+
+      <main>
+        <h2>About me</h2>
+        <div class="top-warpper">
+            <div class="inner-wrapper">
+
+                <div class="bio">
+                    <p>Hi, my name is Jack Sauser, and I do a lot of things. I'm a Student-Athlete playing baseball 
+                        and studying computer science at Northwestern University.</p>
+                        <p>I am from Central Illinois, and am currently in Evanston Illinois where I go to school.</p>
+                        
+                        <p>After college I plan on working as a software engineer in the pacific northwest. While in school I am getting a BS in computer science 
+                            from the school of enginnering and a minor in data science and engineering.</p>
+                            <p>I am a highly competitive person, growing up I played every sport before focusing on baseball. I am a 
+                                right handed pitcher for the Cats, primarly closer now. While in college I changed my arm action to a low 3/4, 
+                                giving me wicked movement. I also am the best knuckle-baller on the team even if I'm not allowed to use it.</p>
+                                <p>Besides baseball, I play pickup basketball, hike random trails, and like to try and get on the roof of tall buildings. </p>
+                            </div>
+                     <div class="chart-containe">
+                    <canvas id="bar-chart" width="600" height="450"></canvas>
+                    </div>       
+                        </div>
+                        <div class="pic_container">
+                        <img src="assets/profile.jpg" alt="picture of me for my website" />
+                        </div>
+        </div>
+        
+        
+       </main>
+       
+    </body>
+    <script src="skills.js"></script>
+</html>
